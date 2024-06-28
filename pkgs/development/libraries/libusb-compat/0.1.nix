@@ -10,8 +10,8 @@ stdenv.mkDerivation rec {
   pname = "libusb-compat";
   version = "0.1.8";
 
-  outputs = [ "out" "lib" "dev" ]; # get rid of propagating systemd closure
-  outputBin = "dev";
+  outputs = [ "bin" "dev" "out" ]; # get rid of propagating systemd closure
+  outputBin = "bin";
 
   src = fetchFromGitHub {
     owner = "libusb";
